@@ -1,4 +1,4 @@
-package Prak1;
+package PrakPBO_A_2511532006;
 import java.util.ArrayList;
 
 public class Rekening {

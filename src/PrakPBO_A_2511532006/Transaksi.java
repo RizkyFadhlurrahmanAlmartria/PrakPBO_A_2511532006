@@ -1,4 +1,4 @@
-package Prak1;
+package PrakPBO_A_2511532006;
 
 public class Transaksi {
 	private String idTransaksi;
