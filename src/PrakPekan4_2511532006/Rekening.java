@@ -36,7 +36,7 @@ public class Rekening {
 		if(nominal > 0) {
 			saldo += nominal;
 			
-			String idTrx = "TRX-S-" + System.currentTimeMillis(); //jadi UID
+			String idTrx = "TRX-S-" + System.currentTimeMillis();
 			Transaksi trxBaru = new Transaksi(idTrx, "Kredit", nominal);
 			riwayatTransaksi.add(trxBaru);
 			
@@ -61,7 +61,7 @@ public class Rekening {
 			System.out.println("Transaksi Gagal: Minimal nominal 10.000" );
 		} else {
 			
-			String idTrx = "TRX-T-" + System.currentTimeMillis(); //jadi UID
+			String idTrx = "TRX-T-" + System.currentTimeMillis();
 			Transaksi trxBaru = new Transaksi(idTrx, "Debit", nominal);
 			riwayatTransaksi.add(trxBaru);
 			
@@ -73,15 +73,12 @@ public class Rekening {
 	public void cetakMutasi() {
 		System.out.println("--- RIWAYAT TRANSAKSI ---");
 	    
-	    // Mengecek jika riwayat masih kosong
 	    if (riwayatTransaksi.isEmpty()) {
 	        System.out.println("Belum ada transaksi pada rekening ini.");
 	        
 	    }
 
-	    // Menggunakan for-each untuk menelusuri ArrayList riwayatTransaksi
 	    for (Transaksi trx : riwayatTransaksi) {
-	        // Asumsi class Transaksi punya method getJenis() dan getNominal()
 	        System.out.println("ID: " + trx.getIdTransaksi() + " | Jenis: " + trx.getJenis() + " | Rp" + trx.getNominal());
 	    }
 		
