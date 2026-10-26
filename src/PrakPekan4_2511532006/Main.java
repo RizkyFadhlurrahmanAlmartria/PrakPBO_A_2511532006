@@ -126,7 +126,6 @@ public class Main {
                         
                         System.out.println("Sukses: Bunga akhir bulan berhasil ditambahkan ke rekening tabungan Anda.");
                 	}else {
-                        // 4. Jika bukan Tabungan (misal: Rekening Giro/Deposito), tolak dengan pesan
                         System.out.println("Gagal: Fitur bunga akhir bulan hanya berlaku untuk Rekening Tabungan.");
                     } break;
                 case 0:
