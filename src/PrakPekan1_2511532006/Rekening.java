@@ -6,7 +6,7 @@ public class Rekening {
 	String namaPemilik;
 	double saldo;
 	
-	
+	//Constructor
 	public Rekening(String nomor, String nama, double saldoAwal) {
 		this.nomorRekening = nomor;
 		this.namaPemilik = nama;

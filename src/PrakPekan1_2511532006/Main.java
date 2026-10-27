@@ -55,9 +55,8 @@ public class Main {
                 	System.out.println("Inputkan Nominal Penarikan: ");
                 	double nominal = input.nextDouble();
                 	input.nextLine();
-                	System.out.print("Inputkan PIN: ");
-                		akunAktif.tarikTunai(nominal);
-                        break;
+                	akunAktif.tarikTunai(nominal);
+                    break;
                 	
 
                 case 4:
